@@ -58,6 +58,7 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 
 - [にじさんじ非公式Wiki](https://wikiwiki.jp/nijisanji/)
 - [にじさんじDiscord部](https://twitter.com/njsnj_discord/)
+- [THE IDOLM@STER IMEユーザー辞書登録用テキスト](https://ime.imas-db.jp/)
 
 ## ToDo
 
