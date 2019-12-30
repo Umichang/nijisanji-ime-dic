@@ -3,48 +3,52 @@
 Microsoft IMEなどで利用することを想定した「にじさんじ」関連用語の用語辞書です。
 MITライセンスにて配布しています。
 
-## QuickStart
+## QuickStart（Windows/Microsoft IME or Google日本語入力）
 
 1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.txt>
 1. あなたのご利用になっている日本語入力システム（Microsoft IMEなど）にインポート（やり方はググりな！）
 1. でわな〜
+
+## QuickStart（macOSの日本語入力環境）
+
+1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.plist>
+1. 「システム環境設定」→「キーボード」→「ユーザ辞書」を選択
+1. ダウンロードしたdic.plistファイルを一覧にドロップ
+1. やっちゃー！
 
 ## 動作環境
 
 Microsoft IME形式の辞書ファイルを読み込める入力システムであれば、
 多くのもので利用可能かと思います。
 
+macOS向けのplist形式も準備しました。
+なお、macOSの辞書登録はシステムの仕様上品詞をサポートしていません。
+
 ### 動作確認済環境
 
+#### dic.txt（Microsoft IME形式）
 - Microsoft IME (Windows 10 2019 Fall Update)
 - Google日本語入力
 - Mozc (Crostini環境)
 
-## Apple製品で利用する場合
+#### dic.plist形式
+- macOS 10.15.2 Catalina
 
-多くのApple純正入力環境（macOS、iOS、iPadOS）の日本語入力システムでは、
+## iOS/iPadOSで利用する場合
+
+iOSとiPadOSの既定の日本語入力システムでは、
 本辞書ファイルは扱うことができません。
 
-将来的には.plist形式での同時提供も検討していますが、
-現状は以下のワークアラウンドをご利用ください。
-
-- Google日本語入力などを利用する（消極的な解決策ですね）
-- あるいは、以下の方法で.plist形式へ変換します
-  1. いったん、macOSのGoogle日本語入力へ本辞書ファイルを読み込ませ、Google日本語入力形式で書き出します
-  1. <https://startide.jp/comp/im/userdic/> をインストールし、`ruby userdic google apple < (google-dic-file) > (apple-plist-file)`のような形で変換する※1
-
-※1：このツールは品詞がメンテナンスされていないようなので、直接`ruby userdic msime apple < dic.txt > (apple-plist-file)`のようにするとエラーが大量に発生します。
-
-いずれにせよ、現状でiOS/iPadOSへの.plist直接登録は難しいと思うので、macOSからiCloud経由での登録がもっとも無難です。
+現状ではmacOSで登録し、iCloud経由で同期するのがもっとも簡単です。
 
 ## Google製品で利用する場合
 
 Google日本語入力で動作確認をとっています。また、筆者のメイン執筆環境はChromebook Linux環境(Crostini)のため、Mozcでも動作確認をしています。
 
 一方、Androidで「Gboard」（Googleが製作した多言語キーボードアプリ）を利用する場合、そのままの形では本辞書ファイルを扱うことができません。
-ワークアラウンドについては調査中です。※2
+ワークアラウンドについては調査中です。※1
 
-※2：あるにはあるのですが、Dev版のみの機能の可能性もありややこしいため
+※1：あるにはあるのですが、Dev版のみの機能の可能性もありややこしいため
 
 ## 収録する基準について
 
@@ -53,6 +57,14 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 **チャットで多用するようなフレーズのショートカットなどの収録は目指していません。**
 
 そうした辞書を御用命の方は、forkしていただくか、既存のにじさん辞書をご利用ください。
+
+## dic.txtからdic.plistを生成する
+
+Rubyの実行環境と userdic-ng 1.0 以降が必要です。
+
+<https://github.com/Umichang/userdic-ng>
+
+詳しくは[Makefile](Makefile)を読んでなんとかしてください……
 
 ## Thanks
 
@@ -65,6 +77,3 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 - 定期的なメンテナンス
   - 月見しずく卒業に関する対応（2020年1月中旬を予定）
 - カテゴリの追加？
-- Apple .plist形式の自動生成対応
-  - 専用のスクリプトを自作する方向で検討中
-  - にじそうさく3が終わるまではpendingです
