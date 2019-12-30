@@ -3,6 +3,8 @@
 Microsoft IMEなどで利用することを想定した「にじさんじ」関連用語の用語辞書です。
 MITライセンスにて配布しています。
 
+macOSの既定の日本語入力環境にも対応しました！
+
 ## QuickStart（Windows/Microsoft IME or Google日本語入力）
 
 1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.txt>
@@ -76,4 +78,5 @@ Rubyの実行環境と userdic-ng 1.0 以降が必要です。
 
 - 定期的なメンテナンス
   - 月見しずく卒業に関する対応（2020年1月中旬を予定）
+  - 遠北千南卒業に関する対応（2020年3月末を予定）
 - カテゴリの追加？
