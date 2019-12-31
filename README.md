@@ -58,7 +58,7 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 ### QuickStart（Gboard for Android）
 
 1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.zip>
-1. **ZIPファイルを展開せず、**、Gboardアプリの「単語リスト」→「日本語」でインポート。なお、インポートのメニューが表示されない場合もあります（詳細は不明）。
+1. **ZIPファイルを展開せず、**Gboardアプリの「単語リスト」→「日本語」でインポート。なお、インポートのメニューが表示されない場合もあります（詳細は不明）。
 1. おけまるリンゴジュース！
 
 ## 収録する基準について
