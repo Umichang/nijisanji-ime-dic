@@ -29,11 +29,13 @@ macOS向けのplist形式も準備しました。
 ### 動作確認済環境
 
 #### dic.txt（Microsoft IME形式）
+
 - Microsoft IME (Windows 10 2019 Fall Update)
 - Google日本語入力
 - Mozc (Crostini環境)
 
-#### dic.plist形式
+#### dic.plist（macOS形式）
+
 - macOS 10.15.2 Catalina
 
 ## iOS/iPadOSで利用する場合
@@ -48,9 +50,16 @@ iOSとiPadOSの既定の日本語入力システムでは、
 Google日本語入力で動作確認をとっています。また、筆者のメイン執筆環境はChromebook Linux環境(Crostini)のため、Mozcでも動作確認をしています。
 
 一方、Androidで「Gboard」（Googleが製作した多言語キーボードアプリ）を利用する場合、そのままの形では本辞書ファイルを扱うことができません。
-ワークアラウンドについては調査中です。※1
 
-※1：あるにはあるのですが、Dev版のみの機能の可能性もありややこしいため
+機械的に変換したものを用意しましたが、
+登録できても変換候補に出ない、コメントアウトされているはずの単語が登録されているなどの不具合が生じます。
+そのむね了解の上ご使用ください。
+
+### QuickStart（Gboard for Android）
+
+1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.zip>
+1. **ZIPファイルを展開せず、**、Gboardアプリの「単語リスト」→「日本語」でインポート。なお、インポートのメニューが表示されない場合もあります（詳細は不明）。
+1. おけまるリンゴジュース！
 
 ## 収録する基準について
 
@@ -60,9 +69,9 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 
 そうした辞書を御用命の方は、forkしていただくか、既存のにじさん辞書をご利用ください。
 
-## dic.txtからdic.plistを生成する
+## dic.txtからdic.plistとdic.zipを生成する
 
-Rubyの実行環境と userdic-ng 1.0 以降が必要です。
+iconv、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
 
 <https://github.com/Umichang/userdic-ng>
 
