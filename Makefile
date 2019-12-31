@@ -11,9 +11,13 @@ SOURCE	= dic.txt
 APPLE	= dic.plist
 GBOARD	= dic.zip
 
-all:
+all:	apple gboard
+
+apple:
 	userdic-ng msime apple < ./${SOURCE} > ./${APPLE}
-	iconv -f UTF-16LE -t UTF-8 < ./${SOURCE} > dictionary.txt; zip -u ${GBOARD} dictionary.txt ; rm dictionary.txt
+
+gboard:
+	iconv -f UTF-16LE -t UTF-8 < ./${SOURCE} > dictionary.txt; zip -u ./${GBOARD} dictionary.txt ; rm dictionary.txt
 
 clean:
-	rm ./${APPLE} ${GBOARD}
+	rm ./${APPLE} ./${GBOARD}
