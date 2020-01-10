@@ -685,6 +685,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>ユードリック</string>
+<key>shortcut</key>
+<string>ゆーどりっく</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>ジョニー</string>
 <key>shortcut</key>
 <string>じょにー</string>
@@ -1222,6 +1228,30 @@
 <string>Hana Macchia</string>
 <key>shortcut</key>
 <string>はなまきあ</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>Rai Galilei</string>
+<key>shortcut</key>
+<string>らいがりれい</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>Amicia Michella</string>
+<key>shortcut</key>
+<string>あみしあみしぇら</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>Miyu Ottavia</string>
+<key>shortcut</key>
+<string>みゆおったゔぃあ</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>Riksa Dhirendra</string>
+<key>shortcut</key>
+<string>りくさでぃれんどら</string>
 </dict>
 <dict>
 <key>phrase</key>
