@@ -77,6 +77,11 @@ iconv、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
 
 詳しくは[Makefile](Makefile)を読んでなんとかしてください……
 
+## 派生したりしたモノ
+
+- [userdic-ng（Rubyで動作するユーザー辞書変換ツール）](https://github.com/Umichang/userdic-ng)
+- [pokemon-ime-dic（全ポケモン名辞書）](https://github.com/Umichang/pokemon-ime-dic)
+
 ## Thanks
 
 - [にじさんじ非公式Wiki](https://wikiwiki.jp/nijisanji/)
