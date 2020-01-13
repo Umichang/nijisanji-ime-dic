@@ -361,12 +361,6 @@
 </dict>
 <dict>
 <key>phrase</key>
-<string>月見しずく</string>
-<key>shortcut</key>
-<string>つきみしずく</string>
-</dict>
-<dict>
-<key>phrase</key>
 <string>ジョー・力一</string>
 <key>shortcut</key>
 <string>じょーりきいち</string>
@@ -424,6 +418,12 @@
 <string>鳴門こがね</string>
 <key>shortcut</key>
 <string>なるとこがね</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>月見しずく</string>
+<key>shortcut</key>
+<string>つきみしずく</string>
 </dict>
 <dict>
 <key>phrase</key>
