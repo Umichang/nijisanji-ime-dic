@@ -1945,6 +1945,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>加賀追ハヤル</string>
+<key>shortcut</key>
+<string>かがおいはやる</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>ガチ屑農家</string>
 <key>shortcut</key>
 <string>がちくずのうか</string>
