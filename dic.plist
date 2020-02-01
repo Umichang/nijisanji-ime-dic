@@ -2875,6 +2875,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>冥府-UnderWorld-</string>
+<key>shortcut</key>
+<string>めいふ</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>めいとババア</string>
 <key>shortcut</key>
 <string>めいとばばあ</string>
