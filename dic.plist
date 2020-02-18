@@ -2761,6 +2761,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>プリンあらどーも。</string>
+<key>shortcut</key>
+<string>ぷりんあらどーも</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>ぷりんず</string>
 <key>shortcut</key>
 <string>ぷりんず</string>
