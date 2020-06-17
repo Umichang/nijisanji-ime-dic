@@ -32,13 +32,13 @@ macOS向けのplist形式も準備しました。
 
 #### dic.txt（Microsoft IME形式）
 
-- Microsoft IME (Windows 10 2019 Fall Update)
+- Microsoft IME (Windows 10 2020 May Update)
 - Google日本語入力
 - Mozc (Crostini環境)
 
 #### dic.plist（macOS形式）
 
-- macOS 10.15.2 Catalina
+- macOS 10.15.5 Catalina
 
 ## iOS/iPadOSで利用する場合
 
@@ -114,12 +114,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 ### ところで原稿の方、進捗どうですか
 
-**正直まったくダメです。**
-
-にじそうさく3で「魔法少女勇気ちひろ」のお試し版だけでも出したい、と言う希望があったのですが、
-2月3日段階で1byteも進捗が出ないので、多分落とします。ちーちゃん、ごめんね。
-
-結局のところ遠北引退のお知らせがとどめになってしまったのです……。（これも言い訳）
+いや、今本業が忙しくなってきたから……。
 
 ----
 
@@ -137,8 +132,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 ## ToDo
 
 - 定期的なメンテナンス
-  - ~~遠北千南卒業に関する対応（2020年3月末を予定）~~ Done...
-  - 新しいライバー追加（まだー？）
+  - 新しいライバー追加（しばらくなさそう）
 - カテゴリの追加？
   - ファン名呼称追加を検討中（意外と変換しにくいものが多かったので）
   - 各種ハッシュタグについては収録基準からやや外れるので消極的
