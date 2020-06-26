@@ -131,6 +131,8 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 ## ToDo
 
+- Microsoft IME追加辞書サービスへの対応
+  - 対応自体はさほど大変ではないが、自動化がめんどくさい
 - 定期的なメンテナンス
   - 新しいライバー追加（しばらくなさそう）
 - カテゴリの追加？
