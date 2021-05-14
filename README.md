@@ -7,15 +7,26 @@ macOSの既定の日本語入力環境にも対応しました！
 
 2020年2月より愛称を **「にじさんじ文芸辞書」** としました！
 
+## Topics
+
+ver.20210514 より、ファイルを3分割しました。
+
+- main.txt （ライバーの名前と姓名のみを収録。これのみを適用することを推奨）
+- collab.txt （コラボ名称を収録。どうしても必要でない限りは適用しないでください。できれば必要なもののみをピックアップして適用してください）
+- misc.txt （その他の雑多な項目。余裕があれば適用しても大丈夫です）
+
+**原則として main.txt のみを利用することをお勧めします。**
+あまり辞書登録しすぎると、変換精度が下がる可能性があります。
+
 ## QuickStart（Windows/Microsoft IME or Google日本語入力）
 
-1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.txt>
+1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/main.txt>
 1. あなたのご利用になっている日本語入力システム（Microsoft IMEなど）にインポート（やり方はググりな！）
 1. でわな〜
 
 ## QuickStart（macOSの日本語入力環境）
 
-1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.plist>
+1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/main.plist>
 1. 「システム環境設定」→「キーボード」→「ユーザ辞書」を選択
 1. ダウンロードしたdic.plistファイルを一覧にドロップ
 1. やっちゃー！
@@ -30,15 +41,15 @@ macOS向けのplist形式も準備しました。
 
 ### 動作確認済環境
 
-#### dic.txt（Microsoft IME形式）
+#### main.txt（Microsoft IME形式）
 
 - Microsoft IME (Windows 10 2020 May Update)
 - Google日本語入力
 - Mozc (Crostini環境)
 
-#### dic.plist（macOS形式）
+#### main.plist（macOS形式）
 
-- macOS 10.15.5 Catalina
+- macOS 11.3.1 Big Sur
 
 ## iOS/iPadOSで利用する場合
 
@@ -59,7 +70,7 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 
 ### QuickStart（Gboard for Android）
 
-1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/dic.zip>
+1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/main.zip>
 1. **ZIPファイルを展開せず、** Gboardアプリの「単語リスト」→「日本語」でインポート。なお、インポートのメニューが表示されない場合もあります（詳細は不明）。
 1. おけまるリンゴジュース！
 

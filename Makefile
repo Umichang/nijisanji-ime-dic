@@ -7,17 +7,18 @@
 # https://github.com/Umichang/userdic-ng
 #
 
-SOURCE	= ./dic.txt
-APPLE	= ./dic.plist
-GBOARD	= ./dic.zip
+SOURCE = main.txt collab.txt misc.txt
+TARGET = main.plist collab.plist misc.plist main.zip collab.zip misc.zip
 
-all:	apple gboard
+.SUFFIXES: .txt .plist .zip
 
-apple:
-	userdic-ng msime apple < ${SOURCE} > ${APPLE}
+all: ${TARGET}
 
-gboard:
-	iconv -f UTF-16LE -t UTF-8 < ${SOURCE} > dictionary.txt; zip -u ${GBOARD} dictionary.txt ; rm dictionary.txt
+.txt.plist:
+	userdic-ng msime apple < $< > $@
+
+.txt.zip:
+	iconv -f UTF-16LE -t UTF-8 < $< > dictionary.txt; zip -u $@ dictionary.txt ; rm dictionary.txt
 
 clean:
-	rm ${APPLE} ${GBOARD}
+	rm ${TARGET}

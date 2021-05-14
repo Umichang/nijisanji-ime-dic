@@ -1,7 +1,7 @@
 !Microsoft IME Dictionary Tool
 !Version:
 !Format:WORDLIST
-!DateTime: 2021年05月14日 22:00
+!DateTime: 2021年05月14日 21:00
 
 ! このファイルは MITライセンスです。詳細はGitHub上のリポジトリを参照してください。
 ! https://github.com/Umichang/nijisanji-ime-dic
