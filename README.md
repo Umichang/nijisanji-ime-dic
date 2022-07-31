@@ -17,6 +17,8 @@ ver.20210514 より、ファイルを3分割しました。
 
 **原則として main.txt のみを利用することをお勧めします。**
 あまり辞書登録しすぎると、変換精度が下がる可能性があります。
+なお、ver.20220801より大幅に用語を整理しました。辞書崩壊の可能性は若干低くなっていますが、ご利用の日本語入力システムのアルゴリズムに依存します。
+（特にATOKへインポートされる方はご注意ください！）
 
 ## QuickStart（Windows/Microsoft IME or Google日本語入力）
 
@@ -43,13 +45,13 @@ macOS向けのplist形式も準備しました。
 
 #### main.txt（Microsoft IME形式）
 
-- Microsoft IME (Windows 10 2020 May Update)
+- Microsoft IME (Windows 11 21H2)
 - Google日本語入力
 - Mozc (Crostini環境)
 
 #### main.plist（macOS形式）
 
-- macOS 11.3.1 Big Sur
+- macOS 12.5 Monteley
 
 ## iOS/iPadOSで利用する場合
 
@@ -86,8 +88,8 @@ Google日本語入力で動作確認をとっています。また、筆者の�
 - issueを出す（わかってる人向け）
 - マシュマロを投げる → <https://marshmallow-qa.com/umic_y_ang>
   - どのバージョンの、どの項目に誤りがあるかを明示していただけると助かります！
-- にじさんじDiscord部の#1か#4（IT・ガジェット）あたりで言う
-  - 多分#1は内容的な話で、#4は技術的な話で使うとええんちゃうかな
+- にじさんじDiscord部の#1か#5（IT・ガジェット）あたりで言う
+  - 多分#1は内容的な話で、#5は技術的な話で使うとええんちゃうかな
 
 あるいは、TwitterやMastodon（ハッシュタグリレーに参加してるインスタンスのみ）であれば、
 以下のハッシュタグも定期的に巡回しています：
@@ -123,10 +125,6 @@ iconv、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
 hmm...If you use Windows 10 (Latest Version), you can add "Japanese Environment", includes Microsoft IME.
 or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
-### ところで原稿の方、進捗どうですか
-
-いや、今本業が忙しくなってきたから……。
-
 ----
 
 ## 派生したりしたモノ
@@ -143,13 +141,12 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 ## ToDo
 
 - Microsoft IME追加辞書サービスへの対応
-  - 対応自体はさほど大変ではないが、自動化がめんどくさい
+  - 最近Windows使ってないのと、Microsoftの対応が不明なので一旦保留
 - 定期的なメンテナンス
-  - 新しいライバー追加（しばらくなさそう）
+  - 新しいライバー追加
 - カテゴリの追加？
   - ファン名呼称追加を検討中（意外と変換しにくいものが多かったので）
   - 各種ハッシュタグについては収録基準からやや外れるので消極的
 - 近代化（は？）
-  - 手動makeとかやめたい、ちゃんとCIしたい（2020年4月以降検討）
   - そもそもuserdic-ng自体がやっつけだし、ちゃんと作り直せ説（他の辞書形式の対応が必要になったらめちゃくちゃ頑張ります）
   - 直接関係なさそうだけど、任意のlinter向けの辞書って必要ですか……？
