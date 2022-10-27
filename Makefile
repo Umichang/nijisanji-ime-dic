@@ -7,8 +7,8 @@
 # https://github.com/Umichang/userdic-ng
 #
 
-SOURCE = main.txt collab.txt misc.txt
-TARGET = main.plist collab.plist misc.plist main.zip collab.zip misc.zip
+SOURCE = main.txt collab.txt misc.txt vta.txt
+TARGET = main.plist collab.plist misc.plist vta.plist main.zip collab.zip misc.zip vta.zip
 
 .SUFFIXES: .txt .plist .zip
 
