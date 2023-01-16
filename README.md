@@ -9,9 +9,10 @@ macOSの既定の日本語入力環境にも対応しました！
 
 ## Topics
 
-ver.20210514 より、ファイルを3分割しました。
+ver.20220113 より、ファイルを4分割しました。
 
 - main.txt （ライバーの名前と姓名のみを収録。これのみを適用することを推奨）
+- vta.txt （VTA生の名前を収録。VTA生を追っかけている方はこちらも適用してください）
 - collab.txt （コラボ名称を収録。どうしても必要でない限りは適用しないでください。できれば必要なもののみをピックアップして適用してください）
 - misc.txt （その他の雑多な項目。余裕があれば適用しても大丈夫です）
 
@@ -45,13 +46,13 @@ macOS向けのplist形式も準備しました。
 
 #### main.txt（Microsoft IME形式）
 
-- Microsoft IME (Windows 11 21H2)
+- Microsoft IME (Windows 11 22H2)
 - Google日本語入力
 - Mozc (Crostini環境)
 
 #### main.plist（macOS形式）
 
-- macOS 12.5 Monteley
+- macOS 13.1 Ventura
 
 ## iOS/iPadOSで利用する場合
 
@@ -136,6 +137,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 - [にじさんじ非公式Wiki](https://wikiwiki.jp/nijisanji/)
 - [にじさんじDiscord部](https://twitter.com/njsnj_discord/)
+- [VTA非公式Wiki](https://vta.swiki.jp/)
 - [THE IDOLM@STER IMEユーザー辞書登録用テキスト](https://ime.imas-db.jp/)
 
 ## ToDo
