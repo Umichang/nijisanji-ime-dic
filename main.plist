@@ -781,12 +781,6 @@
 </dict>
 <dict>
 <key>phrase</key>
-<string>アクシア・クローネ</string>
-<key>shortcut</key>
-<string>あくしあくろーね</string>
-</dict>
-<dict>
-<key>phrase</key>
 <string>ローレン・イロアス</string>
 <key>shortcut</key>
 <string>ろーれんいろあす</string>
@@ -808,6 +802,12 @@
 <string>レイン・パターソン</string>
 <key>shortcut</key>
 <string>れいんぱたーそん</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>アクシア・クローネ</string>
+<key>shortcut</key>
+<string>あくしあくろーね</string>
 </dict>
 <dict>
 <key>phrase</key>
