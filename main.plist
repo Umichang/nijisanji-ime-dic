@@ -1357,6 +1357,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>獅子堂</string>
+<key>shortcut</key>
+<string>ししどう</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>天開司</string>
 <key>shortcut</key>
 <string>てんかいつかさ</string>
