@@ -47,8 +47,7 @@ macOS向けのplist形式も準備しました。
 #### main.txt（Microsoft IME形式）
 
 - Microsoft IME (Windows 11 22H2)
-- Google日本語入力
-- Mozc (Crostini環境)
+- Google日本語入力 (Windows、Mac、Chromebook)
 
 #### main.plist（macOS形式）
 
@@ -63,7 +62,8 @@ iOSとiPadOSの既定の日本語入力システムでは、
 
 ## Google製品で利用する場合
 
-Google日本語入力で動作確認をとっています。また、筆者のメイン執筆環境はChromebook Linux環境(Crostini)のため、Mozcでも動作確認をしています。
+Google日本語入力で動作確認をとっています。~~また、筆者のメイン執筆環境はChromebook Linux環境(Crostini)のため、Mozcでも動作確認をしています。~~
+なお、今後Chromebook Linux環境(crostini)にてcros-im経由でGoogle日本語入力が利用可能になる予定ですが、現状では動作確認は行なっていません。
 
 一方、Androidで「Gboard」（Googleが製作した多言語キーボードアプリ）を利用する場合、そのままの形では本辞書ファイルを扱うことができません。
 

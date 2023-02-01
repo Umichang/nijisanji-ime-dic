@@ -901,7 +901,7 @@
 </dict>
 <dict>
 <key>phrase</key>
-<string>倉持メルト</string>
+<string>倉持めると</string>
 <key>shortcut</key>
 <string>くらもちめると</string>
 </dict>
@@ -1354,6 +1354,12 @@
 <string>壱百満天原</string>
 <key>shortcut</key>
 <string>ひゃくまんてんばら</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>獅子堂</string>
+<key>shortcut</key>
+<string>ししどう</string>
 </dict>
 <dict>
 <key>phrase</key>
