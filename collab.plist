@@ -169,6 +169,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>Oriens</string>
+<key>shortcut</key>
+<string>おりえんす</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>おりコウ</string>
 <key>shortcut</key>
 <string>おりこう</string>
@@ -490,6 +496,12 @@
 <string>Dの石</string>
 <key>shortcut</key>
 <string>でぃーのいし</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>Dytica</string>
+<key>shortcut</key>
+<string>でぃてぃか</string>
 </dict>
 <dict>
 <key>phrase</key>
