@@ -1,4 +1,4 @@
-!!ATOK_TANGO_TEXT_HEADER_1
+﻿!!ATOK_TANGO_TEXT_HEADER_1
 じょにー	ジョニー	固有人他
 うさちゃんせんせい	うさちゃん先生	固有人他
 ごんざれす	ゴンザレス	固有人他

@@ -427,6 +427,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>3SKM</string>
+<key>shortcut</key>
+<string>すりーえすけーえむ</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>世怜音演劇同好会</string>
 <key>shortcut</key>
 <string>せれいねえんげきどうこうかい</string>
@@ -778,6 +784,12 @@
 <string>MC組</string>
 <key>shortcut</key>
 <string>めしぐみ</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>MECHATU-A</string>
+<key>shortcut</key>
+<string>めちゃつえー</string>
 </dict>
 <dict>
 <key>phrase</key>
