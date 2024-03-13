@@ -52,7 +52,7 @@ macOS向けのplist形式も準備しました。
 
 #### main.plist（macOS形式）
 
-- macOS 13.1 Ventura
+- macOS 14.4 Ventura
 
 #### main.atok.txt
 
