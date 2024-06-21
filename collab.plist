@@ -25,6 +25,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>いずれ菖蒲か杜若</string>
+<key>shortcut</key>
+<string>あやかき</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>アラサーランク帯</string>
 <key>shortcut</key>
 <string>あらさーらんくたい</string>
@@ -52,6 +58,12 @@
 <string>i's</string>
 <key>shortcut</key>
 <string>いーりす</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>いずれ菖蒲か杜若</string>
+<key>shortcut</key>
+<string>いずれあやめかかきつばた</string>
 </dict>
 <dict>
 <key>phrase</key>

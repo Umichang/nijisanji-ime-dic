@@ -47,12 +47,12 @@ macOS向けのplist形式も準備しました。
 
 #### main.txt（Microsoft IME形式）
 
-- Microsoft IME (Windows 11 22H2)
+- Microsoft IME (Windows 11 22H3)
 - Google日本語入力 (Windows、Mac、Chromebook)
 
 #### main.plist（macOS形式）
 
-- macOS 14.4 Ventura
+- macOS 14.5 Sonoma
 
 #### main.atok.txt
 
