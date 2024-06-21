@@ -21,7 +21,7 @@ all: ${TARGET}
 	iconv -f UTF-16LE -t UTF-8 < $< > dictionary.txt; zip -u $@ dictionary.txt ; rm dictionary.txt
 
 .txt.atok.txt:
-	userdic-ng msime atok < $< | iconv -f UTF-16LE -t UTF-8 | ruby -pe 'sub("\n", "\r\n")' > $@
+	userdic-ng msime atok < $< | iconv -f UTF-16LE -t UTF-8 | ruby -pe 'gsub(/ゔ/, "う゛")' | iconv -f UTF-8 -t MS_KANJI -c | ruby -pe 'sub("\n", "\r\n")' > $@
 
 clean:
 	rm ${TARGET}
