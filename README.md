@@ -56,7 +56,9 @@ macOS向けのplist形式も準備しました。
 
 #### main.atok.txt
 
-- ATOK 2023（パスポート版）
+- ATOK 2023（macOS、パスポート版）
+  - Windows版はMicrosoft IME形式の辞書ファイルを読み込めますので、そちらをご利用ください。
+  - ATOK版はexperimental（試験版）とします。
 
 ## iOS/iPadOSで利用する場合
 
@@ -137,6 +139,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 - [userdic-ng（Rubyで動作するユーザー辞書変換ツール）](https://github.com/Umichang/userdic-ng)
 - [pokemon-ime-dic（全ポケモン名辞書）](https://github.com/Umichang/pokemon-ime-dic)
+- [hsr-ime-dic（崩壊スターレイル辞書）](https://github.com/Umichang/hsr-ime-dic)
 
 ## Thanks
 
