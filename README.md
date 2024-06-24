@@ -139,7 +139,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 - [userdic-ng（Rubyで動作するユーザー辞書変換ツール）](https://github.com/Umichang/userdic-ng)
 - [pokemon-ime-dic（全ポケモン名辞書）](https://github.com/Umichang/pokemon-ime-dic)
-- [hsr-ime-dic（崩壊スターレイル辞書）](https://github.com/Umichang/hsr-ime-dic)
+- [hsr-ime-dic（崩壊：スターレイル辞書）](https://github.com/Umichang/hsr-ime-dic)
 
 ## Thanks
 
