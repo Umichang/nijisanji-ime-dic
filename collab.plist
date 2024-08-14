@@ -433,6 +433,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>Speciale</string>
+<key>shortcut</key>
+<string>すぺしゃーれ</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>SMC組</string>
 <key>shortcut</key>
 <string>すめしぐみ</string>
