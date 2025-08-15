@@ -319,6 +319,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>今宵、××と夢を見る。</string>
+<key>shortcut</key>
+<string>こよいとゆめをみる</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>サイコ組</string>
 <key>shortcut</key>
 <string>さいこぐみ</string>
