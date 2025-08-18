@@ -321,7 +321,7 @@
 <key>phrase</key>
 <string>今宵、××と夢を見る。</string>
 <key>shortcut</key>
-<string>こよいとゆめをみる</string>
+<string>こよいとすぴねるゆめをみる</string>
 </dict>
 <dict>
 <key>phrase</key>
@@ -838,6 +838,12 @@
 <string>夢星家</string>
 <key>shortcut</key>
 <string>ゆめほしけ</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>今宵、××と夢を見る。</string>
+<key>shortcut</key>
+<string>よいゆめ</string>
 </dict>
 <dict>
 <key>phrase</key>
