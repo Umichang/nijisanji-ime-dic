@@ -31,12 +31,6 @@
 </dict>
 <dict>
 <key>phrase</key>
-<string>鈴谷アキ</string>
-<key>shortcut</key>
-<string>すずやあき</string>
-</dict>
-<dict>
-<key>phrase</key>
 <string>モイラ</string>
 <key>shortcut</key>
 <string>もいら</string>
@@ -46,6 +40,12 @@
 <string>勇気ちひろ</string>
 <key>shortcut</key>
 <string>ゆうきちひろ</string>
+</dict>
+<dict>
+<key>phrase</key>
+<string>鈴谷アキ</string>
+<key>shortcut</key>
+<string>すずやあき</string>
 </dict>
 <dict>
 <key>phrase</key>
