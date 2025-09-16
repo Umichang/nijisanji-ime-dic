@@ -673,6 +673,12 @@
 </dict>
 <dict>
 <key>phrase</key>
+<string>グウェル・オス・ガール</string>
+<key>shortcut</key>
+<string>ぐうぇるおすがーる</string>
+</dict>
+<dict>
+<key>phrase</key>
 <string>ましろ爻</string>
 <key>shortcut</key>
 <string>ましろめめ</string>
@@ -688,12 +694,6 @@
 <string>来栖夏芽</string>
 <key>shortcut</key>
 <string>くるすなつめ</string>
-</dict>
-<dict>
-<key>phrase</key>
-<string>グウェル・オス・ガール</string>
-<key>shortcut</key>
-<string>ぐうぇるおすがーる</string>
 </dict>
 <dict>
 <key>phrase</key>
