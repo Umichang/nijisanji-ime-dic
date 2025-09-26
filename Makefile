@@ -7,30 +7,60 @@
 # https://github.com/Umichang/userdic-ng
 #
 
-SOURCE = main.utf8.txt collab.utf8.txt misc.utf8.txt vta.utf8.txt
-TARGET = \
-	main.txt collab.txt misc.txt vta.txt \
-	main.plist collab.plist misc.plist vta.plist \
-	main.zip collab.zip misc.zip vta.zip \
-	main.atok.txt collab.atok.txt misc.atok.txt vta.atok.txt
+SRCDIR := utf8
+OUTDIR := build
 
-.SUFFIXES: .utf8.txt .txt .plist .zip .atok.txt
+# ソース一覧（utf8/*.txt）
+SOURCES := $(wildcard $(SRCDIR)/*.txt)
 
-all: ${TARGET}
+# 名前一覧: utf8/foo.txt -> foo
+NAMES := $(patsubst $(SRCDIR)/%.txt,%,$(SOURCES))
 
-.utf8.txt.txt:
+# 出力拡張子リスト
+OUT_EXTS := txt plist zip atok.txt
+
+# 便宜ターゲット一覧（build/foo.all など）
+ALL_TARGETS := $(foreach n,$(NAMES),$(OUTDIR)/$(n).all)
+
+.PHONY: all clean $(ALL_TARGETS)
+
+all: $(ALL_TARGETS)
+
+# 各 NAME.all は OUT_EXTS を展開して依存にする
+$(foreach n,$(NAMES), \
+  $(eval $(OUTDIR)/$(n).all: \
+    $(foreach e,$(OUT_EXTS),$(OUTDIR)/$(n).$(e))) \
+  $(eval $(OUTDIR)/$(n).all: ; @echo "Built all outputs for $(n)"))
+
+# ------------------------
+# 個別の変換ルール
+# ------------------------
+
+# utf8/foo.txt -> build/foo.txt
+$(OUTDIR)/%.txt: $(SRCDIR)/%.txt | $(OUTDIR)
+	@echo "Generating $@ from $<"
 	nkf -w16L -Lw $< > $@
 
-.utf8.txt.plist:
+# utf8/foo.txt -> build/foo.plist
+$(OUTDIR)/%.plist: $(SRCDIR)/%.txt | $(OUTDIR)
+	@echo "Generating $@ from $<"
 	userdic-ng msime apple < $< > $@
 
-.utf8.txt.zip:
+# utf8/foo.txt -> build/foo.zip
+$(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
+	@echo "Generating $@ from $<"
 	cp $< dictionary.txt
 	zip -u $@ dictionary.txt
 	rm dictionary.txt
 
-.utf8.txt.atok.txt:
+# utf8/foo.txt -> build/foo.atok.txt
+$(OUTDIR)/%.atok.txt: $(SRCDIR)/%.txt | $(OUTDIR)
+	@echo "Generating $@ from $<"
 	userdic-ng msime atok < $< | nkf -w | ruby -pe 'gsub("ゔ", "ヴ")' | nkf -s -Lw > $@
 
+# 出力ディレクトリを作成
+$(OUTDIR):
+	@mkdir -p $@
+
 clean:
-	rm ${TARGET}
+	$(RM) -r $(OUTDIR)

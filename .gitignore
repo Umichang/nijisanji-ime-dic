@@ -1,7 +1,4 @@
 .DS_Store
 .gitattributes
 
-*.plist
-*.zip
-*.txt
-!*.utf8.txt
+/build/
