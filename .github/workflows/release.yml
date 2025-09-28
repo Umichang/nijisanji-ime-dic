@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  upload-assets:
+    name: Upload assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Checkout userdic-ng
+        uses: actions/checkout@v5
+        with:
+          repository: Umichang/userdic-ng
+          path: userdic-ng
+
+      - name: Install userdic-ng
+        working-directory: userdic-ng
+        run: |
+          make install BINDIR=.
+          echo "$PWD" >> $GITHUB_PATH
+
+      - name: Install nkf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nkf
+
+      - name: Generate dictionaries
+        run: make
+
+      - name: Upload assets
+        run: gh release upload "${{ github.ref_name }}" build/*
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
