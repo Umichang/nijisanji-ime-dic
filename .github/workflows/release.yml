@@ -23,9 +23,9 @@ jobs:
           path: userdic-ng
 
       - name: Install userdic-ng
-        working-directory: ./userdic-ng
+        working-directory: userdic-ng
         run: |
-          make install BINDIR=.
+          make
           echo "$PWD" >> $GITHUB_PATH
 
       - name: Install nkf
