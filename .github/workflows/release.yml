@@ -13,11 +13,11 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Checkout
-        uses: actions/checkout@v5
+      - name: Checkout nijisanji-ime-dic
+        uses: actions/checkout@v6
 
       - name: Checkout userdic-ng
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           repository: Umichang/userdic-ng
           path: userdic-ng
