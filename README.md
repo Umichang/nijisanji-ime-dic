@@ -117,7 +117,7 @@ Google日本語入力で動作確認をとっています。~~また、筆者の
 
 ### dic.txtからdic.plistとdic.zipを生成する
 
-iconv、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
+~~iconv~~nkf、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
 
 <https://github.com/Umichang/userdic-ng>
 
