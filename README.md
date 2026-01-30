@@ -24,13 +24,13 @@ ver.20220113 より、ファイルを4分割しました。
 
 ## QuickStart（Windows/Microsoft IME or Google日本語入力）
 
-1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/main.txt>
+1. 最新版を「名前をつけて保存」→ <https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.txt>
 1. あなたのご利用になっている日本語入力システム（Microsoft IMEなど）にインポート（やり方はググりな！）
 1. でわな〜
 
 ## QuickStart（macOSの日本語入力環境）
 
-1. 最新版を「名前をつけて保存」→ <https://raw.githubusercontent.com/Umichang/nijisanji-ime-dic/master/main.plist>
+1. 最新版を「名前をつけて保存」→ <https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.plist>
 1. 「システム環境設定」→「キーボード」→「ユーザ辞書」を選択
 1. ダウンロードしたdic.plistファイルを一覧にドロップ
 1. やっちゃー！
