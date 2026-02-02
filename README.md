@@ -47,18 +47,19 @@ macOS向けのplist形式も準備しました。
 
 #### main.txt（Microsoft IME形式）
 
-- Microsoft IME (Windows 11 22H3)
+- Microsoft IME (Windows 11 25H2)
 - Google日本語入力 (Windows、Mac、Chromebook)
 
 #### main.plist（macOS形式）
 
-- macOS 14.5 Sonoma
+- macOS 26.2 Tahoe
 
 #### main.atok.txt
 
-- ATOK 2023（macOS、パスポート版）
+- ~~ATOK 2023（macOS、パスポート版）~~
   - Windows版はMicrosoft IME形式の辞書ファイルを読み込めますので、そちらをご利用ください。
-  - ATOK版はexperimental（試験版）とします。
+  - ~~ATOK版はexperimental（試験版）とします。~~
+  - ATOK for Macのサポートを終了します。macOS標準日本語入力を用いるか、[かわせみ](https://www.monokakido.jp/ja/mac/kawasemi4/index.html)を用いることをお勧めします。
 
 ## iOS/iPadOSで利用する場合
 
