@@ -12,7 +12,7 @@ macOSの既定の日本語入力環境にも対応しました！
 
 ver.20220113 より、ファイルを4分割しました。
 
-- [main.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.txt) （ライバーの名前と姓名のみを収録。これのみを適用することを推奨
+- [main.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.txt) （ライバーの名前と姓名のみを収録。これのみを適用することを推奨）
 - [vta.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/vta.txt) （VTA生の名前を収録。VTA生を追っかけている方はこちらも適用してください）
 - [collab.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/collab.txt) （コラボ名称を収録。どうしても必要でない限りは適用しないでください。できれば必要なもののみをピックアップして適用してください）
 - [misc.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/misc.txt)  （その他の雑多な項目。余裕があれば適用しても大丈夫です）
@@ -59,7 +59,7 @@ macOS向けのplist形式も準備しました。
 - ~~ATOK 2023（macOS、パスポート版）~~
   - Windows版はMicrosoft IME形式の辞書ファイルを読み込めますので、そちらをご利用ください。
   - ~~ATOK版はexperimental（試験版）とします。~~
-  - **ATOK for Macのサポートを終了します。**macOS標準日本語入力を用いるか、[かわせみ](https://www.monokakido.jp/ja/mac/kawasemi4/index.html)経由で辞書変換することをお勧めします。
+  - **ATOK for Macのサポートを終了します。** macOS標準日本語入力を用いるか、[かわせみ](https://www.monokakido.jp/ja/mac/kawasemi4/index.html)経由で辞書変換することをお勧めします。
 
 ## iOS/iPadOSで利用する場合
 
