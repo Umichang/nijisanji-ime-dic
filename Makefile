@@ -3,9 +3,22 @@
 # https://github.com/Umichang/nijisanji-ime-dic
 #
 # Microsoft IME形式の dic.txt からmacOS向けの dic.plist とGboard向けの dic.zip を生成します。
-# 実行にはnkf、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
+# 実行にはnkf、Rubyの実行環境と userdic-ng 1.0 以降 または userdic-py が必要です。
 # https://github.com/Umichang/userdic-ng
+# https://github.com/Umichang/userdic-py
 #
+
+ifeq ($(wildcard /usr/local/bin/userdic-py),/usr/local/bin/userdic-py)
+USERDIC := /usr/local/bin/userdic-py
+else ifneq ($(shell command -v userdic-py 2>/dev/null),)
+USERDIC := userdic-py
+else ifeq ($(wildcard /usr/local/bin/userdic-ng),/usr/local/bin/userdic-ng)
+USERDIC := /usr/local/bin/userdic-ng
+else ifneq ($(shell command -v userdic-ng 2>/dev/null),)
+USERDIC := userdic-ng
+else
+$(error userdic-py または userdic-ng が見つかりません。/usr/local/bin か PATH にインストールしてください)
+endif
 
 SRCDIR := utf8
 OUTDIR := build
@@ -44,7 +57,7 @@ $(OUTDIR)/%.txt: $(SRCDIR)/%.txt | $(OUTDIR)
 # utf8/foo.txt -> build/foo.plist
 $(OUTDIR)/%.plist: $(SRCDIR)/%.txt | $(OUTDIR)
 	@echo "Generating $@ from $<"
-	userdic-ng msime apple < $< > $@
+	$(USERDIC) msime apple < $< > $@
 
 # utf8/foo.txt -> build/foo.zip
 $(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
@@ -56,7 +69,7 @@ $(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
 # utf8/foo.txt -> build/foo.atok.txt
 $(OUTDIR)/%.atok.txt: $(SRCDIR)/%.txt | $(OUTDIR)
 	@echo "Generating $@ from $<"
-	userdic-ng msime atok < $< | nkf -w | ruby -pe 'gsub("ゔ", "ヴ")' | nkf -s -Lw > $@
+	$(USERDIC) msime atok < $< | nkf -w | ruby -pe 'gsub("ゔ", "ヴ")' | nkf -s -Lw > $@
 
 # 出力ディレクトリを作成
 $(OUTDIR):
