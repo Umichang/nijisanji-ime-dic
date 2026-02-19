@@ -117,9 +117,10 @@ Google日本語入力で動作確認をとっています。~~また、筆者の
 
 ### dic.txtからdic.plistとdic.zipを生成する
 
-~~iconv~~nkf、Rubyの実行環境と userdic-ng 1.0 以降が必要です。
+nkfとuserdic-ng（およびRuby実行環境）、またはuserdic-py（およびPython実行環境）が必要です。
 
 <https://github.com/Umichang/userdic-ng>
+<https://github.com/Umichang/userdic-py>
 
 詳しくは[Makefile](Makefile)を読んでなんとかしてください……
 
@@ -138,6 +139,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 ## 派生したりしたモノ
 
 - [userdic-ng（Rubyで動作するユーザー辞書変換ツール）](https://github.com/Umichang/userdic-ng)
+- [userdic-py（pythonで動作するユーザー辞書変換ツール）](https://github.com/Umichang/userdic-py)
 - [pokemon-ime-dic（全ポケモン名辞書）](https://github.com/Umichang/pokemon-ime-dic)
 - [hsr-ime-dic（崩壊：スターレイル辞書）](https://github.com/Umichang/hsr-ime-dic)
 
@@ -145,7 +147,6 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 - [にじさんじ非公式Wiki](https://wikiwiki.jp/nijisanji/)
 - [にじさんじDiscord部](https://twitter.com/njsnj_discord/)
-- [VTA非公式Wiki](https://vta.swiki.jp/)
 - [THE IDOLM@STER IMEユーザー辞書登録用テキスト](https://ime.imas-db.jp/)
 
 ## ToDo
@@ -157,6 +158,3 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 - カテゴリの追加？
   - ファン名呼称追加を検討中（意外と変換しにくいものが多かったので）
   - 各種ハッシュタグについては収録基準からやや外れるので消極的
-- 近代化（は？）
-  - そもそもuserdic-ng自体がやっつけだし、ちゃんと作り直せ説（他の辞書形式の対応が必要になったらめちゃくちゃ頑張ります）
-  - 直接関係なさそうだけど、任意のlinter向けの辞書って必要ですか……？
