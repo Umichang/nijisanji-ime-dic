@@ -119,8 +119,8 @@ Google日本語入力で動作確認をとっています。~~また、筆者の
 
 nkfとuserdic-ng（およびRuby実行環境）、またはuserdic-py（およびPython実行環境）が必要です。
 
-<https://github.com/Umichang/userdic-ng>
-<https://github.com/Umichang/userdic-py>
+- <https://github.com/Umichang/userdic-ng>
+- <https://github.com/Umichang/userdic-py>
 
 詳しくは[Makefile](Makefile)を読んでなんとかしてください……
 
