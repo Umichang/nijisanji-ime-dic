@@ -3,7 +3,7 @@
 # https://github.com/Umichang/nijisanji-ime-dic
 #
 # Microsoft IME形式の dic.txt からmacOS向けの dic.plist とGboard向けの dic.zip を生成します。
-# 実行にはnkfと userdic-ng 1.0以降 または userdic-py 0.1.1以降が必要です。
+# 実行にはnkfと userdic-ng 1.0 以降 または userdic-py 0.1.1 以降が必要です。
 # https://github.com/Umichang/userdic-ng
 # https://github.com/Umichang/userdic-py
 #
