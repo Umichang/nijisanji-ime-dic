@@ -16,8 +16,6 @@ else ifeq ($(wildcard /usr/local/bin/userdic-ng),/usr/local/bin/userdic-ng)
 USERDIC := /usr/local/bin/userdic-ng
 else ifneq ($(shell command -v userdic-ng 2>/dev/null),)
 USERDIC := userdic-ng
-else
-$(error userdic-py または userdic-ng が見つかりません。/usr/local/bin か PATH にインストールしてください)
 endif
 
 SRCDIR := utf8
@@ -35,9 +33,12 @@ OUT_EXTS := txt plist zip atok.txt
 # 便宜ターゲット一覧（build/foo.all など）
 ALL_TARGETS := $(foreach n,$(NAMES),$(OUTDIR)/$(n).all)
 
-.PHONY: all clean $(ALL_TARGETS)
+.PHONY: all clean check-userdic $(ALL_TARGETS)
 
 all: $(ALL_TARGETS)
+
+check-userdic:
+	@test -n "$(USERDIC)" || (echo "userdic-py または userdic-ng が見つかりません。/usr/local/bin か PATH にインストールしてください" >&2; exit 1)
 
 # 各 NAME.all は OUT_EXTS を展開して依存にする
 $(foreach n,$(NAMES), \
@@ -55,7 +56,7 @@ $(OUTDIR)/%.txt: $(SRCDIR)/%.txt | $(OUTDIR)
 	nkf -w16L -Lw $< > $@
 
 # utf8/foo.txt -> build/foo.plist
-$(OUTDIR)/%.plist: $(SRCDIR)/%.txt | $(OUTDIR)
+$(OUTDIR)/%.plist: $(SRCDIR)/%.txt | $(OUTDIR) check-userdic
 	@echo "Generating $@ from $<"
 	$(USERDIC) msime apple < $< > $@
 
@@ -67,7 +68,7 @@ $(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
 	rm dictionary.txt
 
 # utf8/foo.txt -> build/foo.atok.txt
-$(OUTDIR)/%.atok.txt: $(SRCDIR)/%.txt | $(OUTDIR)
+$(OUTDIR)/%.atok.txt: $(SRCDIR)/%.txt | $(OUTDIR) check-userdic
 	@echo "Generating $@ from $<"
 	$(USERDIC) msime atok < $< | nkf -w | ruby -pe 'gsub("ゔ", "ヴ")' | nkf -s -Lw > $@
 
