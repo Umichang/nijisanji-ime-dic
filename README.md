@@ -9,7 +9,7 @@ macOSの既定の日本語入力環境にも対応しました！
 
 ## Topics
 
-ver.20260220 より、ファイルを4分割しました。
+ver.20260220 より、ファイルを5分割しました。
 
 - [main.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.txt) （ライバーの名前と姓名のみを収録。これのみを適用することを推奨）
 - [vta.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/vta.txt) （VTA生の名前を収録。VTA生を追っかけている方はこちらも適用してください）
