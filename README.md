@@ -9,13 +9,13 @@ macOSの既定の日本語入力環境にも対応しました！
 
 ## Topics
 
-ver.20220113 より、ファイルを4分割しました。
+ver.20260220 より、ファイルを4分割しました。
 
-- main.txt （ライバーの名前と姓名のみを収録。これのみを適用することを推奨）
-- vta.txt （VTA生の名前を収録。VTA生を追っかけている方はこちらも適用してください）
-- overseas.txt （海外ライバーの名前を収録。必要に応じて）
-- collab.txt （コラボ名称を収録。どうしても必要でない限りは適用しないでください。できれば必要なもののみをピックアップして適用してください）
-- misc.txt （その他の雑多な項目。余裕があれば適用しても大丈夫です）
+- [main.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.txt) （ライバーの名前と姓名のみを収録。これのみを適用することを推奨）
+- [vta.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/vta.txt) （VTA生の名前を収録。VTA生を追っかけている方はこちらも適用してください）
+- [overseas.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/overseas.txt) （海外ライバーの名前を収録。必要に応じて）
+- [collab.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/collab.txt) （コラボ名称を収録。どうしても必要でない限りは適用しないでください。できれば必要なもののみをピックアップして適用してください）
+- [misc.txt](https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/misc.txt) （その他の雑多な項目。余裕があれば適用しても大丈夫です）
 
 **原則として main.txt のみを利用することをお勧めします。**
 あまり辞書登録しすぎると、変換精度が下がる可能性があります。
