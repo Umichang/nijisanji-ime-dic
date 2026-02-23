@@ -1,13 +1,17 @@
-name: Release
+name: Build and Release
 
 on:
+  push:
+    branches:
+      - master
+  pull_request:
   release:
     types:
       - published
 
 jobs:
-  upload-assets:
-    name: Upload assets
+  build:
+    name: Build assets
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -37,6 +41,7 @@ jobs:
         run: make
 
       - name: Upload assets
+        if: ${{ github.event_name == 'release' }}
         run: gh release upload "${{ github.ref_name }}" build/*
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
