@@ -28,7 +28,7 @@ SOURCES := $(wildcard $(SRCDIR)/*.txt)
 NAMES := $(patsubst $(SRCDIR)/%.txt,%,$(SOURCES))
 
 # 出力拡張子リスト
-OUT_EXTS := txt plist zip atok.txt
+OUT_EXTS := txt plist zip
 
 # 便宜ターゲット一覧（build/foo.all など）
 ALL_TARGETS := $(foreach n,$(NAMES),$(OUTDIR)/$(n).all)
@@ -66,11 +66,6 @@ $(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
 	cp $< dictionary.txt
 	zip -u $@ dictionary.txt
 	rm dictionary.txt
-
-# utf8/foo.txt -> build/foo.atok.txt
-$(OUTDIR)/%.atok.txt: $(SRCDIR)/%.txt | $(OUTDIR) check-userdic
-	@echo "Generating $@ from $<"
-	$(USERDIC) msime atok < $< | nkf -w | sed 's/ゔ/ヴ/g' | nkf -s -Lw > $@
 
 # 出力ディレクトリを作成
 $(OUTDIR):
