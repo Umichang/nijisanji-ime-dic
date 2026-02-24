@@ -40,7 +40,14 @@ jobs:
       - name: Generate dictionaries
         run: make
 
-      - name: Upload assets
+      - name: Upload assets to artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: dictionaries
+          path: build/
+          if-no-files-found: error
+
+      - name: Upload assets to release
         if: ${{ github.event_name == 'release' }}
         run: gh release upload "${{ github.ref_name }}" build/*
         env:
