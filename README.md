@@ -152,10 +152,7 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 ## ToDo
 
-- Microsoft IME追加辞書サービスへの対応
-  - 最近Windows使ってないのと、Microsoftの対応が不明なので一旦保留
 - 定期的なメンテナンス
   - 新しいライバー追加
 - カテゴリの追加？
-  - ファン名呼称追加を検討中（意外と変換しにくいものが多かったので）
-  - 各種ハッシュタグについては収録基準からやや外れるので消極的
+  - ファンマーク辞書？（絵文字扱いに関して調査、変換効率の低下への対策も必要？）
