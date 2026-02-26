@@ -29,8 +29,8 @@ jobs:
       - name: Install userdic-py
         working-directory: userdic-py
         run: |
-          make install PREFIX="$PWD"
-          echo "$PWD/bin" >> "$GITHUB_PATH"
+          make install PREFIX="${{ runner.temp }}"
+          echo "${{ runner.temp }}/bin" >> "$GITHUB_PATH"
 
       - name: Install nkf
         run: |
