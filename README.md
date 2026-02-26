@@ -24,7 +24,7 @@ ver.20260226 より、ファイルを5分割しました。
 なお、ver.20220801より大幅に用語を整理しました。辞書崩壊の可能性は若干低くなっていますが、ご利用の日本語入力システムのアルゴリズムに依存します。
 （特にATOKへインポートされる方はご注意ください！）
 
-## QuickStart（Windows/Microsoft IME or Google日本語入力）
+## QuickStart（Windows/Microsoft IME / Google日本語入力 / ATOK for Windows）
 
 1. 最新版を「名前をつけて保存」→ <https://github.com/Umichang/nijisanji-ime-dic/releases/latest/download/main.txt>
 1. あなたのご利用になっている日本語入力システム（Microsoft IMEなど）にインポート（やり方はググりな！）
@@ -56,12 +56,11 @@ macOS向けのplist形式も準備しました。
 
 - macOS 26.2 Tahoe
 
-#### main.atok.txt
+#### ~~main.atok.txt~~
 
 - ~~ATOK 2023（macOS、パスポート版）~~
-  - Windows版はMicrosoft IME形式の辞書ファイルを読み込めますので、そちらをご利用ください。
-  - ~~ATOK版はexperimental（試験版）とします。~~
   - ATOK for Macのサポートを終了します。macOS標準日本語入力を用いるか、[かわせみ](https://www.monokakido.jp/ja/mac/kawasemi4/index.html)を用いることをお勧めします。
+  - Windows版はMicrosoft IME形式の辞書ファイルを読み込めますので、そちらをご利用ください。
 
 ## iOS/iPadOSで利用する場合
 
@@ -72,8 +71,7 @@ iOSとiPadOSの既定の日本語入力システムでは、
 
 ## Google製品で利用する場合
 
-Google日本語入力で動作確認をとっています。~~また、筆者のメイン執筆環境はChromebook Linux環境(Crostini)のため、Mozcでも動作確認をしています。~~
-なお、今後Chromebook Linux環境(crostini)にてcros-im経由でGoogle日本語入力が利用可能になる予定ですが、現状では動作確認は行なっていません。
+Google日本語入力で動作確認をとっています。
 
 一方、Androidで「Gboard」（Googleが製作した多言語キーボードアプリ）を利用する場合、そのままの形では本辞書ファイルを扱うことができません。
 
@@ -156,5 +154,5 @@ or, If you use macOS, you can add "Japanese Environment" via Control Panel.
 
 - 定期的なメンテナンス
   - 新しいライバー追加
-- カテゴリの追加？
+- カテゴリの追加
   - ファンマーク辞書？（絵文字扱いに関して調査、変換効率の低下への対策も必要？）
