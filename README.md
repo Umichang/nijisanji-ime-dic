@@ -118,7 +118,7 @@ Google日本語入力で動作確認をとっています。
 
 ### dic.txtからdic.plistとdic.zipを生成する
 
-nkfとuserdic-ng 1.0以降（およびRuby実行環境）、またはuserdic-py 0.1.2以降（およびPython実行環境）が必要です。
+nkfとuserdic-ng 1.1以降（およびRuby実行環境）、またはuserdic-py 0.1.2以降（およびPython実行環境）が必要です。
 
 - <https://github.com/Umichang/userdic-ng>
 - <https://github.com/Umichang/userdic-py>
