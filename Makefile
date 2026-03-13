@@ -58,7 +58,7 @@ $(OUTDIR)/%.txt: $(SRCDIR)/%.txt | $(OUTDIR)
 # utf8/foo.txt -> build/foo.plist
 $(OUTDIR)/%.plist: $(SRCDIR)/%.txt | $(OUTDIR) check-userdic
 	@echo "Generating $@ from $<"
-	$(USERDIC) msime apple < $< > $@
+	$(USERDIC) --input-encoding utf8 msime apple < $< > $@
 
 # utf8/foo.txt -> build/foo.zip
 $(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
