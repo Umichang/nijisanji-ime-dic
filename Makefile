@@ -3,7 +3,7 @@
 # https://github.com/Umichang/nijisanji-ime-dic
 #
 # Microsoft IME形式の dic.txt からmacOS向けの dic.plist とGboard向けの dic.zip を生成します。
-# 実行にはnkfと userdic-ng 1.0 以降 または userdic-py 0.1.1 以降が必要です。
+# 実行にはnkfと userdic-ng 1.0 以降 または userdic-py 0.1.2 以降が必要です。
 # https://github.com/Umichang/userdic-ng
 # https://github.com/Umichang/userdic-py
 #
@@ -58,7 +58,7 @@ $(OUTDIR)/%.txt: $(SRCDIR)/%.txt | $(OUTDIR)
 # utf8/foo.txt -> build/foo.plist
 $(OUTDIR)/%.plist: $(SRCDIR)/%.txt | $(OUTDIR) check-userdic
 	@echo "Generating $@ from $<"
-	$(USERDIC) msime apple < $< > $@
+	$(USERDIC) --input-encoding utf8 msime apple < $< > $@
 
 # utf8/foo.txt -> build/foo.zip
 $(OUTDIR)/%.zip: $(SRCDIR)/%.txt | $(OUTDIR)
