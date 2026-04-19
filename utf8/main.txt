@@ -7,7 +7,7 @@
 ! https://github.com/Umichang/nijisanji-ime-dic
 
 ! 主な更新
-! ver.20260419: ？？？？？？？？
+! ver.20260419: Y4T4ってYouTube/Twitchってこちょ？
 ! ver.20260226: メンテナンスリリース
 ! ver.20260129: うみゃみーって響きがかわいい
 ! ver.20250917: 男性アイドル…だと…？
