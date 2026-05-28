@@ -20,17 +20,8 @@ jobs:
       - name: Checkout nijisanji-ime-dic
         uses: actions/checkout@v6
 
-      - name: Checkout userdic-py
-        uses: actions/checkout@v6
-        with:
-          repository: Umichang/userdic-py
-          path: userdic-py
-
       - name: Install userdic-py
-        working-directory: userdic-py
-        run: |
-          make install PREFIX="${{ runner.temp }}"
-          echo "${{ runner.temp }}/bin" >> "$GITHUB_PATH"
+        run: python -m pip install userdic-py
 
       - name: Install nkf
         run: |
