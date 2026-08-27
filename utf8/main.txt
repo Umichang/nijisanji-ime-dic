@@ -1,12 +1,13 @@
 !Microsoft IME Dictionary Tool
 !Version:
 !Format:WORDLIST
-!DateTime: 2026年07月21日 18:30
+!DateTime: 2026年08月27日 18:30
 
 ! このファイルは MITライセンスです。詳細はGitHub上のリポジトリを参照してください。
 ! https://github.com/Umichang/nijisanji-ime-dic
 
 ! 主な更新
+! ver.20260827: RhyZyGy、綴りが難しい
 ! ver.20260721: これはゆめかわですわ
 ! ver.20260419: Y4T4ってYouTube/Twitchってこちょ？
 ! ver.20260226: メンテナンスリリース
@@ -324,6 +325,8 @@
 ! 2026年7〜9月期活動開始
 ぷりんららもーど	ぷりん・らら・もーど	人名	
 ぽめろぱんち	ぽめろ・ぱんち	人名	
+かみながたいが	神永タイガ	人名	
+やまだりゅういちろう	山田龍一郎	人名	
 
 ! ■■ ライバーフルネーム ここまで ■■
 
